@@ -1,11 +1,11 @@
-// let user= {
-//     name:"john",
-//     age:30,
+let user= {
+    name:"john",
+    age:30,
   
-// }
+}
 //  console.log(user.name);
-/*
- function makeUser(name,age){
+
+function makeUser(name,age){
 return{
     name:name,
     age:age
@@ -24,10 +24,8 @@ return{
  console.log(obj.key)
  console.log("key" in obj);
 
- */
 
 //  for in loop in object 
-/*
 let user = {
     name:"john",
     age:"30",
@@ -37,10 +35,9 @@ for (const key in user) {
    console.log(key); //return key
    console.log(user[key]) //return key value
 }
-*/
 
 // for of loop in object 
-/*
+
 let user = {
     name:"john",
     age:"30",
@@ -50,10 +47,8 @@ for (const prop of user) {
     console.log(prop);
     
 }
-*/
 
 // for in loop in integer value of object 
-/*
 let codes = {
     "49": "Germany",
     "41": "Switzerland",
@@ -64,12 +59,10 @@ let codes = {
   for (let prop in codes){
     console.log(prop) //it will return the value in accending order because it is the integer value
   }
-  */
 
 
 //   in anothe example of phone codes
 // fix the issue in phone codes 
-/*
 let phoneCode={
     "+49":"Germany",
     "+41":"Switzerland",
@@ -84,12 +77,10 @@ for (let prop in phoneCode){
 
 // empty object 
 let eObj={};
-*/
 
 
 
 
-/*
 let salaries ={
     john:300,
     lete:400,
@@ -105,12 +96,10 @@ for ( let key in salaries){
 }
 
 console.log(sum); //return the sum of the key value of salaries
-*/
 // ------------------------------------?
 // Object references and copying
 
 
-/*
 let message = "hello";
 let phrase = message;
 console.log(message);
@@ -119,55 +108,52 @@ message = "hi"; //new value
 phrase= message;
 console.log(phrase); //it will return the new value 
 
-*/
 
 // 11111111111111111
-/*
 let user= {
     name:"john",
 
 }
 let copyName = user;
-*/
-// console.log(user.name); //return john 
-// console.log(copyName.name); //return same value
+console.log(user.name); //return john 
+console.log(copyName.name); //return same value
 
 
 /*comparison by reference */
 
 // two object are equal only if they are same object 
 
-// let user1= {}
-// let copyName1 = user1;
-// console.log(user1===copyName1); //return return true both have same object 
-// another example 
-// let obj={};
-// let obj1={};
-// console.log(obj===obj1)  //return falsy value because they don't have same object but vaule isa same 
-// const user={
-//     name:"john"
+let user1= {}
+let copyName1 = user1;
+console.log(user1===copyName1); //return return true both have same object 
+another example 
+let obj={};
+let obj1={};
+console.log(obj===obj1)  //return falsy value because they don't have same object but vaule isa same 
+const user={
+    name:"john"
 
-// }
+}
 // modifying values 
-// user.name="smith";
-// console.log(user.name) //return smith const value also  modified
+user.name="smith";
+console.log(user.name) //return smith const value also  modified
 
 
 // 22222222222222222222222222222
 // Cloning and merging  object
-// let user = {
-//     name:"john",
-//     age:40
-// }
-// let clone ={};
-// for (let key in user ){
-//     clone[key]=user[key];
-// }
-// console.log(clone.name); //now retrun value is john
+let user = {
+    name:"john",
+    age:40
+}
+let clone ={};
+for (let key in user ){
+    clone[key]=user[key];
+}
+console.log(clone.name); //now retrun value is john
 
 // // again 
-// clone.name="smith"
-// console.log(clone.name) //now value can be modified and return the new value smith
+clone.name="smith"
+console.log(clone.name) //now value can be modified and return the new value smith
 // we can use method object.assign 
 
 
