@@ -174,3 +174,37 @@ let obj2={
 Object.assign(user,obj1,obj2);
 console.log(user.canEdit); //return true value
 // we can use object.assign
+
+
+
+// 4444444444444444
+// nested clone in object 
+let user ={
+    name :"smith",
+    sizes:{
+        height:120,
+        width:170
+
+    }
+}
+
+console.log(user.sizes.height)
+let clone =Object.assign({},user); //now clone's value is equal to user's value
+console.log(user.sizes===clone.sizes);
+console.log(clone.sizes);
+
+// now change the value of user sizes width
+user.sizes.width=320; //change a property from one place
+console.log(clone.sizes.width); 
+
+structured cloning
+let user ={
+    name:"john",
+    age:30,
+    sizes:{
+        height:320,
+        width:100
+    }
+}
+let clone = structuredClone(user);
+console.log(user.sizes===clone.sizes) //return  false value different object 
